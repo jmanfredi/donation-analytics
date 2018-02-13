@@ -1,4 +1,4 @@
-## Analytics Pipeline for FEC Donation Data
+# Analytics Pipeline for FEC Donation Data
 
 ## Table of Contents
 1. [Introduction](README.md#introduction)
@@ -20,7 +20,6 @@ Each individual contribution is analyzed as an independent record. For each prop
 *Only individual contributions are considered.
 *Each donor name and zipcode combination is considered unique.
 *When a donor is encountered for the first time, this first contribution is considered to be the earliest one. However, the data is not necessarily in chronological order. In the case that a donor is added to the donor dictionary, and a subsequent record is read in with a transaction year earlier than that of the first contribution, this record is ignored.
-*
 
 ## Run Instructions
 After installing Python3 and Numpy, edit the provided input/percentile.txt file with the desired percent value. Then, execute the run.sh script with the following three arguments:
