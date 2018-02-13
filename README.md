@@ -1,4 +1,4 @@
-#Analytics Pipeline for FEC Donation Data
+##Analytics Pipeline for FEC Donation Data
 
 ## Table of Contents
 1. [Introduction](README.md#introduction)
@@ -7,7 +7,7 @@
 4. [Run Instructions](README.md#run-instructions)
 
 ## Introduction
-For political campaigns, identifying donors who are likely to donate money multiple times can be extremely useful for maximizing the impact of a limited marketing budget. The project herein takes as input Federal Election Commission individual contribution data (either from a file or as streaming input) and searches for repeat donors. Running tallies of repeat contributions (as well as the nearest-rank percentile for a percent value provided by the user) for a given zip code, contribution year, and recipient are tracked and written to a file.
+For political campaigns, identifying donors who are likely to donate money multiple times can be extremely useful for maximizing the impact of a limited marketing budget. The project herein takes as input Federal Election Commission individual contribution data and searches for repeat donors. Running tallies of repeat contributions (as well as the nearest-rank percentile for a percent value provided by the user) for a given zip code, contribution year, and recipient are tracked and written to a file. Since the analysis of the data is done line-by-line, this approach could easily be applied to a streaming input rather than a data file.
 
 ## Dependencies
 This project runs with Python3, which can be downloaded [here](https://www.python.org/download/releases/3.0/), and uses the NumPy scientific computing package, which can be found [here](http://www.numpy.org).
@@ -23,4 +23,7 @@ Each individual contribution is analyzed as an independent record. For each prop
 *
 
 ##Run Instructions
-After installing Python3 and Numpy,
+After installing Python3 and Numpy, edit the provided input/percentile.txt file with the desired percent value. Then, execute the run.sh script with the following three arguments:
+*The input file path for the percentile input
+*The input file path for the FEC data
+*The output file path
