@@ -1,0 +1,1 @@
+This test checks that the appropriate donations are counted as repeat contributions. The first donation is from 2017, but then subsequent donations from earlier years are not counted, since they come "after" what we see as the first donation for this particular donor. Donations in 2017 and 2018 are indeed counted as repeat donations.
