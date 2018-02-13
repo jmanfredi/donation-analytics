@@ -17,12 +17,12 @@ Each individual contribution is analyzed as an independent record. For each prop
 
 ## Limitations
 
-*Only individual contributions are considered.
-*Each donor name and zipcode combination is considered unique.
-*When a donor is encountered for the first time, this first contribution is considered to be the earliest one. However, the data is not necessarily in chronological order. In the case that a donor is added to the donor dictionary, and a subsequent record is read in with a transaction year earlier than that of the first contribution, this record is ignored.
+* Only individual contributions are considered.
+* Each donor name and zipcode combination is considered unique.
+* When a donor is encountered for the first time, this first contribution is considered to be the earliest one. However, the data is not necessarily in chronological order. In the case that a donor is added to the donor dictionary, and a subsequent record is read in with a transaction year earlier than that of the first contribution, this record is ignored.
 
 ## Run Instructions
 After installing Python3 and Numpy, edit the provided input/percentile.txt file with the desired percent value. Then, execute the run.sh script with the following three arguments:
-*The input file path for the percentile input
-*The input file path for the FEC data
-*The output file path
+* The input file path for the percentile input
+* The input file path for the FEC data
+* The output file path
